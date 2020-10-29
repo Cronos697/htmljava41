@@ -9,7 +9,7 @@ font-size: medium;
 color: black;
 }
         
-.container{
+#container{
     width: 970px;
     padding: 10px;
     justify-content: center;
