@@ -1,0 +1,80 @@
+html, body{
+    margin: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("images/waves.png") ;
+    font-family: cursive;
+    
+}
+#container{
+    width: 1000px;
+    height: 100%;
+    
+   
+  
+}
+#header{
+    height: 100px;
+    background-color: skyblue;
+    text-align: center;
+    line-height: 100px;
+    margin-top: 10px;
+}
+
+
+#nav{
+    background-color: mediumblue;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#content{
+    background-color: mediumblue;
+    display: flex;
+    padding: 15px;
+}
+#footer{
+    background-color: mediumblue;
+    line-height: 100px;
+    text-align: center;
+}
+.content-left{
+    width: 500px;
+    height: 500px;
+    background-color: skyblue;
+    margin-left: 10px;
+    text-align: center;
+}
+.content-right{
+    width: 500px;
+    height: 500px;
+    background-color: skyblue;
+    margin-right: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.btn:link{
+    background-color: skyblue;
+    color: white;
+    text-decoration: tomato;
+    font-family: cursive;
+    padding: 10px;
+    margin: 10px 10px 10px 0;
+    line-height: 10px;
+
+}
+
+
+
+/*.btn:visited{
+    background-color: white;
+}*/
+
+.btn:hover{
+    background-color: white;
+}
