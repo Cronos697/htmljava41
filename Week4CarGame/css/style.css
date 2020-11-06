@@ -1,0 +1,64 @@
+/*css goes here*/
+
+html, body{
+    height: 100%;
+    margin: 0;
+    background-image:("images/diagonal.png");
+    
+     
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    font-family: 'Turret Road', cursive;
+   
+}
+
+#container{
+    width: 1000px;
+    background-color:yellow;
+    padding: 10px;
+}
+
+header{
+    background-color: orange;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Turret Road', cursive;
+    border: black solid 3px;
+    
+}
+
+nav{
+    background-color: orange;
+    margin-bottom: 10px;
+    font-family: 'Turret Road', cursive;
+    text-align: center;
+    border: black solid 3px;
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Turret Road', cursive;
+
+}
+
+canvas{
+    background-color:orange;
+    border: 5px solid black;
+    margin-bottom: 10px;
+    background-image:("images/diagonal.png");
+}
+
+footer{
+    background-color:yellow;
+    border: black 5px solid;
+    text-align: center;
+    font-family: 'Turret Road', cursive;
+    
+}
