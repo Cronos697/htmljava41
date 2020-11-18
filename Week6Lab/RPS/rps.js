@@ -12,7 +12,7 @@ btn[2].addEventListener('click', function(e){play(2)})
 
 function play(playersChoice){
     var cpuChoice = Math.floor(Math.random() *2.999);
-    alert("Player Choice: " + rps[playersChoice] + " vs. Computer Choice: " + rps[cpuChoice]);
+    alert("Player Choice: " + rps[playersChoice] + " vs. Computer Choice: " + rps[cpuChoice]); 
 switch(playersChoice){
     case 0:
         if(cpuChoice === 0){

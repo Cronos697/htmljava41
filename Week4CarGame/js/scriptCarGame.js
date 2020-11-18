@@ -33,12 +33,13 @@ var frames = fps;
 function main(){
     timer = requestAnimationFrame(main)
     //clear the canvas
-ctx.clearRect(0,0, 800, 600);
+ctx.clearRect(0,0, c.width, c.height);
 //draw the game objects
 drawStartLine();
 drawFinishLine();
 drawBox();
 drawSprite();
+
 drawFuelBar();
 drawFuelText();
 
@@ -83,8 +84,8 @@ if(fuel <= 0 || x + 100 > finish){
 }
 
 function drawBox(){
-    ctx.fillStyle = 'greenyellow'
-
+    ctx.fillStyle = 'black'
+    ctx.fillRect(start -10, 70, barFullWidth +20, 30);
 }
 
 function drawSprite(){
