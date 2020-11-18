@@ -1,0 +1,52 @@
+html, body{
+    background-image: url(images/rps5.jpg) ;
+    display:flex;
+    justify-content:center;
+    font-family: 'Impact';
+    
+    
+}
+nav{
+    display:flex;
+    justify-content:center;
+    font-family: 'Impact';
+    background-color: rgb(102, 238, 163);
+    border: 5px solid rgb(206, 13, 13);
+}
+#container{
+    box-sizing:border-box;
+    width:1018px;
+    border:1px solid rgb(239, 7, 247);
+    padding:7px;
+    font-family: 'Impact';
+    background-color: rgb(102, 238, 163);
+}
+canvas{
+    border: px solid rgb(206, 13, 13);
+    box-sizing:border-box;
+    background-color: rgb(102, 238, 163);
+    justify-content: center;
+}
+a:link, a:visited{
+    display:inline-block;
+    background-color: rgb(239, 7, 247);
+    padding:10px;
+    margin:20px;
+}
+
+a:hover{
+    background-color: grey;
+    color: rgb(245, 107, 250)
+    
+
+}
+
+#footer{
+    text-align: center;
+    border: 5px solid rgb(206, 13, 13);
+    font-family: 'Impact';
+    
+}
+
+
+
