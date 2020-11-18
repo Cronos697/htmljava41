@@ -41,6 +41,7 @@ btn[2].addEventListener(`click`, function(e){
 function play(pChoice)
 {
     var cChoice = Math.floor(Math.random()*2.999999)
+    ctx.clearRect(0,0,c.width,c.height)
     
     //alert(rps[pChoice] + " " + rps[cChoice]) 
 
