@@ -1,6 +1,7 @@
 html, body{
     display: flex;
     justify-content: center;
+    background-image: url(images/background.png);
 }
 
 nav{
@@ -12,10 +13,15 @@ nav{
     width:1001px;
     border: 1px solid black;
     padding:7px;
+
 }
 
 canvas{
+       background-image: url(images/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 1px solid black;
+ 
 }
 
 a:link, a:hover{

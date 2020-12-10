@@ -7,13 +7,20 @@ var ctx = c.getContext('2d');
 var mario = new Image();
 mario.src = 'images/Stick.png';
 
+var bg = new Image();
+bg.src = 'images/background.jfif';
+
+bg.onload = function(){
+    main();
+}
+
 var x = 0;
 //Timer
 var timer = requestAnimationFrame(main);
 
 //variables for starting and finish line
-var start = 110;
-var finish = 1010;
+var start = 58;
+var finish = 956;
 
 // fuel variables
 var startFuel = 950;
@@ -34,6 +41,7 @@ function main(){
     timer = requestAnimationFrame(main)
     //clear the canvas
 ctx.clearRect(0,0, c.width, c.height);
+ctx.drawImage(bg,0,0, c.width,c.height);
 //draw the game objects
 drawStartLine();
 drawFinishLine();
@@ -55,6 +63,7 @@ else{
         fuel -= 1;
     }
 }
+
 
 
 

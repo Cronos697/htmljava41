@@ -3,7 +3,7 @@
 html, body{
     height: 100%;
     margin: 0;
-    background-image:("images/diagonal.png");
+    background-image: url("../images/diagonal.png");
     
      
 
@@ -46,14 +46,18 @@ main{
     justify-content: center;
     padding: 10px;
     font-family: 'Turret Road', cursive;
+   /* background-image: url("../images/diagonal.png");*/
+   
 
 }
-
+/* ask how to put background image onto the canvas*/
 canvas{
     background-color:orange;
     border: 5px solid black;
     margin-bottom: 10px;
-    background-image:("images/diagonal.png");
+   /* background-image: url(../images/background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
 footer{
