@@ -1,4 +1,4 @@
-html, body{
+  html, body{
     margin: 10px;
     height: 100%;
     display: flex;
@@ -83,3 +83,12 @@ html, body{
     line-height: 450px;
     font-size: 90px;
 }
+
+
+
+a:hover{
+    background-color: gray;
+    color: rgb(38, 17, 224);
+}
+
+

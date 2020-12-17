@@ -3,13 +3,11 @@ var c = document.querySelector("canvas");
 var ctx = c.getContext("2d");
 
 
-/*var bg = new Image();
+var bg = new Image();
 bg.src = 'images/background2.png';
 
-bg.onload = function(){
-    draw();
-}
-*/
+
+
 
 var rock = new Image();
 var paper = new Image();
@@ -21,35 +19,44 @@ var barFullWidth = 512;
 var health = 100;
 var cpuHealth = 100;
 
-
-var loseScreen = new Image();
-loseScreen.src = "images/background2.png";
+//Not working 
+/*var loseScreen = new Image();
+loseScreen.src = "images/background2.png";*/
 
 /*var bg = new Image();
-bg.src = 'images/background2.png';*/
+bg.src = 'images/background2.jpg';
+
+//Works 
+/*bg.onload = function(){
+    draw
+}*/ 
 
 
 
 
 
-rock.src = "images/rock.jpg";
-paper.src = "images/paper.jpg";
-scissor.src = "images/scissors.jpg";
+rock.src = "images/rockfinal.png";
+paper.src = "images/paperfinal.png";
+scissor.src = "images/scissorfinal.png";
 
-hrock.src = "images/rock2.jpg";
-hpaper.src = "images/paper2.jpg";
-hscissor.src = "images/scissors2.jpg";
+hrock.src = "images/hrockfinal.png";
+hpaper.src = "images/hpaperfinal.png";
+hscissor.src = "images/hscissorfinal.png";
 
-
+//not working
 /*if(health<0 || cpuHealth<0){
     drawResults
 
 }*/
 
-hscissor.onload = function(){
-    draw(rock, paper,scissor, rock, paper,scissor);
-}
 
+
+hscissor.onload = function(){
+    draw(rock, paper,scissor, rock, paper,scissor,);
+}
+bg.onload = function(){
+    draw(rock, paper,scissor, rock, paper,scissor,);
+}
 var results = "Pick an option from the buttons above."
 
 
@@ -73,12 +80,12 @@ function drawHealthBar(){
     //Player health bar
     ctx.fillStyle = 'gray';
     ctx.fillRect(20-10, 30-10, barFullWidth +20, 10+20);
-    ctx.fillStyle = 'white';
+    ctx.fillStyle = 'lime';
     ctx.fillRect(20, 30, barCurrentWidth, 10);
     //cpu health bar
     ctx.fillStyle = 'gray';
     ctx.fillRect(475-10, 550-10, barFullWidth+20, 10+20);
-    ctx.fillStyle = "green";
+    ctx.fillStyle = "red";
     ctx.fillRect(475, 550, barCurrentWidthCpu, 10);
     ctx.restore();
 
@@ -87,6 +94,11 @@ function drawHealthBar(){
 function getHealthPercentage(health){
     return health/100;
 }
+
+
+
+
+
 
 /*if(health<0 || cpuHealth<0){
     loseScreen = draw
@@ -166,9 +178,10 @@ function play(playersChoice){
 }
 
 function draw(rock, paper, scissor, crock, cpaper, cscissor){
+   // ctx.drawImage(bg);
     ctx.clearRect(0,0,c.width,c.height);
     ctx.fillRect(0,0,c.width,c.height);
-
+    ctx.drawImage(bg,0,0,c.width,c.height); 
     ctx.save();
     ctx.font = "30px Arial";
     ctx.textAlign = "center";
@@ -183,10 +196,21 @@ function draw(rock, paper, scissor, crock, cpaper, cscissor){
     ctx.drawImage(cpaper, c.width/2 - paper.width/2, 375);
     ctx.drawImage(cscissor, c.width/2 - scissor.width/2 + 100, 375);
     //displays results
-    ctx.fillText(results, c.width/2, 525);    
+    ctx.fillText(results, c.width/2, 525);   
+   
+    
+    
 
     ctx.restore();
-    drawHealthBar();
+    
+    if(health>0 || cpuHealth>0){
+        drawHealthBar();
+      
+    }
+
+ 
+    
+    //drawHealthBar();
    
     
    

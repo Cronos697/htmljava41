@@ -7,32 +7,43 @@ html, body{
 nav{
     display: flex;
     justify-content: center;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    
+    
+    
 }
 
 #container{
     width:1001px;
     border: 1px solid black;
     padding:7px;
+   /* background-image: url(../RPSpt2/images/background2.png);*/
+    
 
 }
 
-canvas{
-       background-image: url(images/background2.png);
+#canvas{
+      
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid black;
+    /*background-image: url(../RPSpt2/images/background2.jpg);
+    background-image: url(images/background2.jpg);*/
+    
  
 }
 
 a:link, a:hover{
-    background-color: yellow;
+    color:rgb(255, 255, 255);
+    background-color: rgb(82, 82, 82);
     padding:10px;
     margin: 20px;
     text-decoration: none;
-    color:blue;
+    
 }
 
 a:hover{
-    background-color: grey;
-    color: black;
+    background-color: rgb(95, 218, 223);
+    
 }
