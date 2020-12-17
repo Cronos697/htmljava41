@@ -77,7 +77,7 @@ else{
 
 //draw some text
 ctx.lineWidth = 1;
-ctx.strokeStyle = 'black';
+ctx.strokeStyle = 'yellow';
 ctx.font = "50px Timesnewroman";
 ctx.textAlign = 'center'
 ctx.fillText("RACE", c.width/2 , 50);
@@ -103,12 +103,12 @@ ctx.drawImage(mario, x, 110,100,100);
 }
 
 function drawStartLine(){
-    ctx.fillStyle = 'green'
+    ctx.fillStyle = 'orange'
     ctx.fillRect(58, 100, 12, 550);
     
 }
 function drawFinishLine(){
-    ctx.fillStyle = 'darkblue'
+    ctx.fillStyle = 'yellow'
     ctx.fillRect(956, 100, 12, 550);
 
 }
@@ -122,7 +122,7 @@ function drawFuelBar(){
 }
 
 function drawFuelText(){
-    ctx.fillStyle = 'black'
+    ctx.fillStyle = 'yellow'
     ctx.font = '30px Timesnewroman'
     ctx.fillText(fuel, start, 50,);
     
@@ -135,7 +135,8 @@ function getFuelPercentage(){
 function drawResults(){
     if(x + 100 > finish){
         //winning condition
-        ctx.fillStyle = 'black'
+        ctx.fillStyle = 'yellow'
+        ctx.strokeStyle = 'black'
         ctx.font = '30px Timesnewroman'
         ctx.textAlign = 'center'
         ctx.fillText("You Win!", c.width/2, c.height/2);
@@ -144,7 +145,7 @@ function drawResults(){
 
 else{
         //losing condition
-        ctx.fillStyle = 'black'
+        ctx.fillStyle = 'yellow'
         ctx.font = '30px Timesnewroman'
         ctx.textAlign = 'center'
         ctx.fillText("You Lose!", c.width/2, c.height/2);
@@ -161,7 +162,8 @@ function runStartTimer(){
 }
 
 function drawStartTimer(){
-    ctx.fillStyle = 'black'
+    ctx.fillStyle = 'yellow'
+    ctx.strokeStyle = 'black'
     ctx.font = '30px Arial'
     ctx.textAlign = 'center'
     ctx.fillText(sec, c.width/2, c.height/2);
