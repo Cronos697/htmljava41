@@ -1,0 +1,20 @@
+html, body{
+    background-image: url(images/mariobg3.png);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
+
+
+#container{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Russo One';
+    color: black;
+    background-color: skyblue;
+    border: black solid 2px;
+    
+    
+    
+    
+}
+
